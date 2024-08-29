@@ -4,11 +4,11 @@ import Logo from './Logo/Logo'
 import { Socialmediaitem } from '../data/footer/Socialmediaitem';
 import { Servicesitem } from '../data/footer/Servicesitem';
 import { Contactusitems } from '../data/footer/Contactusitems';
-
+import { Subfooter } from './Subfooter';
 export const Footer = () => {
   return (
    <>
-   <div className="bg-gray-100 py-8">
+   <div className="bg-gray-100 py-8 b">
      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center md:text-left">
       
       {Socialmediaitem.map((item, index) => (
@@ -83,9 +83,11 @@ export const Footer = () => {
           </ul>
         </div>
       ))}
-    
+     
     </div>
    </div>
+   <hr className='bg-gray-600 w-[85%] mx-auto px-12'></hr>
+   <Subfooter/>
    </>
   )
 }

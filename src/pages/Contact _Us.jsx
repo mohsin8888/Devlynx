@@ -1,49 +1,85 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+import MainWrapper from "../components/Wrapper/MainWrapper";
+import Heading from '../components/Heading/Heading';
+import { Socialmediaitem } from '../data/footer/Socialmediaitem';
+import Button from "../components/Buttons/Button";
 const Contact_Us = () => {
   return (
     <>
-        {/* <div class="max-w-7xl mx-auto flex flex-col md:flex-row bg-white p-8 shadow-lg rounded-lg">
-       
-        <div class="md:w-1/2 pr-8 mb-8 md:mb-0">
+         <MainWrapper>
+           <Heading
+           heading={"Contact"}
+           CustomClasshea ={"!text-6xl !text-[#000] !pb-16"}
+           />
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20">
+           
+        <div class="md:w-1/2 mb-8 md:mb-0">
             <h2 class="text-2xl font-bold mb-4">Bringing your dream digital ideas to life with our expertise</h2>
-            <h1 class="text-3xl font-extrabold mb-6">Devlynx Technologies</h1>
+            <h1 class="text-[2rem] font-extrabold mb-6">Devlynx Technologies</h1>
             <p class="text-lg mb-4">Office 504, 4th floor, Link Arcade, Model Town, Link Road, Lahore</p>
             <p class="text-lg font-semibold mb-4">connect@devlynxtech.com</p>
-            <div class="flex space-x-4">
-                <a href="#" class="text-black"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="#" class="text-black"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#" class="text-black"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="#" class="text-black"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#" class="text-black"><i class="fab fa-whatsapp fa-2x"></i></a>
-            </div>
+            {Socialmediaitem.map((item, index) => (
+        <div key={index}>
+          <ul className="flex  space-x-4">
+            <li>
+              <Link to="#">
+                <img src={item.linkdin} alt="LinkedIn" className="w-6 h-6" />
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <img src={item.facebook} alt="Facebook" className="w-6 h-6" />
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <img src={item.insta} alt="Instagram" className="w-6 h-6" />
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <img src={item.twitter} alt="Twitter" className="w-6 h-6" />
+              </Link>
+            </li>
+            <li>
+              <Link to="#">
+                <img src={item.whatsappfooter} alt="WhatsApp" className="w-6 h-6" />
+              </Link>
+            </li>
+          </ul>
+        </div>
+      ))}
         </div>
 
       
         <div class="md:w-1/2">
             <form action="#" method="POST">
                 <div class="mb-4">
-                    <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-lg"/>
+                    <input type="text" name="name" placeholder="Your Name"  className="w-full p-3 border border-gray-300 rounded-lg"/>
                 </div>
                 <div class="mb-4">
                     <input type="text" name="company_name" placeholder="Company Name (Optional)" class="w-full p-3 border border-gray-300 rounded-lg"/>
                 </div>
                 <div class="mb-4">
-                    <input type="email" name="email" placeholder="Company Email" class="w-full p-3 border border-gray-300 rounded-lg"/>
+                    <input type="email" name="email" placeholder="Company Email" className="w-full p-3 border border-gray-300 rounded-lg"/>
                 </div>
                 <div class="mb-4">
-                    <input type="text" name="phone" placeholder="Phone Number" class="w-full p-3 border border-gray-300 rounded-lg"/>
+                    <input type="number" name="phone" placeholder="Phone Number" className="w-full p-3 border border-gray-300 rounded-lg"/>
                 </div>
                 <div class="mb-4">
-                    <textarea name="message" rows="4" placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-lg"></textarea>
+                    <textarea name="message" rows="4" placeholder="Your Message" className="w-full p-3 border border-gray-300 rounded-lg"></textarea>
                 </div>
-                <div class="text-center">
-                    <button type="submit" class="bg-blue-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-300">Submit</button>
-                </div>
+                <Button
+    value={"Submit"}
+    customClass={
+      "rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] transition-all duration-300"
+    }
+  />
             </form>
         </div>
-    </div> */}
-
+    </div>
+    </MainWrapper>
 
     </>
   )

@@ -11,7 +11,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  /* overflow-x: hidden ; */
+   overflow-x: hidden ; 
 }
 :root {
   --gray-light: #f4f4f4;

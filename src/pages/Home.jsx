@@ -35,14 +35,14 @@ import { HeroSection } from "../components/Home/HeroSection/HeroSection";
 const Home = () => {
   return (
     <>
-      <MainWrapper CustomClass={"!py-28"} >
+      <MainWrapper CustomClass={" CustomClass=!px-8 md:!px-28 !mt-16"} >
         <HeroSection
            CustomClass="!px-12"
           para="Our primary goal is to develop smart, intelligent solutions that transform your business. We specialise in creating innovative technologies that address complex business challenges, and significantly enhance productivity. Partner with us to unlock the full potential of your business through expert development"
           CustomClaspara=""
         />
       </MainWrapper>
-      <MainWrapper>
+      <MainWrapper  CustomClass={"!px-8 md:!px-28"}>
         <Heading
           heading={"INNOVATION WITH AUTOMATION"}
           subheading={
@@ -79,7 +79,7 @@ const Home = () => {
       </MainWrapper>
       <MainWrapper>
         <Heading
-          CustomClass=" pt-20"
+          CustomClass=""
           heading={"BEST SOLUTION IN RIGHT TIME AND BUDGET"}
           subheading={
             "Time is running out. Don’t waste it on thinking too much. Share your problems with us.Our expert professionals offer you complete guidance about the right solutions to your problems in minimum time and through cost-efficient approaches designed to generate business growth."

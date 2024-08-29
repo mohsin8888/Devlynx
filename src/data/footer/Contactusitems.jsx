@@ -7,7 +7,7 @@ export const Contactusitems = [
     heading:"Reach Us",
      phoneimage: phoneimage,
      phoneimagetext : "+92 316 6618694",
-     envlopimagetext:"hr@devlynxtech.com",
+     envlopimagetext:"connect@devlynxtech.com",
      envlopimage :envlopimage,
      locationimage: locationimage,
      locationimagetext : "Office 504, 4th floor, Link Arcade, Model Town Link Road, Lahore.",

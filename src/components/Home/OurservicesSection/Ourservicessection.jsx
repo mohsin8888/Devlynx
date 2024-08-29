@@ -19,7 +19,7 @@ import { OurServicesItem } from "../../../data/Ourservicessectiondata/OurService
 export const Ourservicessection = () => {
   return (
     <div class="w-full">
-      <h2 class="text-[#2B76C1] text-2xl poppins font-[600] mb-16  text-center">Our Services</h2>
+      <h2 class="text-[#2B76C1] text-2xl poppins font-[600] mb-12  text-center">Our Services</h2>
       <div class="w-[100%] flex flex-col lg:flex-row flex-wrap items-center  justify-center ">
         {/* <!-- Web Services --> */}
         <div class="w-[100%] sm:w-[90%] md:w-[70%] lg:w-[50%] flex flex-col space-y-4 mt-8 lg:mt-0 lg:justify-start md:mt-4">

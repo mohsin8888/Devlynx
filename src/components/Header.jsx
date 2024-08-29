@@ -22,23 +22,23 @@ export const Header = () => {
         <Logo />
 
         <nav className="hidden xl:flex justify-center items-center md:gap-16">
-          <ul className="flex lg:gap-x-12">
-            {Navbaritems.map((item, index) => (
-              <li key={index} className="">
-                <Link
-                  to={item.path}
-                  className={`${
-                    pathname === item.path ? "text-[#2B76C1]" : "text-black"
-                  }`}
-                >
-                  <span className="text-base font-medium whitespace-nowrap ">
-                    {item.lable}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+  <ul className="flex lg:gap-x-12">
+    {Navbaritems.map((item, index) => (
+      <li key={index} className="">
+        <Link
+          to={item.path}
+          className={`${
+            pathname === item.path ? "text-[#2B76C1]" : "text-black"
+          } hover:text-[#2B76C1]`}
+        >
+          <span className="text-base font-medium whitespace-nowrap ">
+            {item.lable}
+          </span>
+        </Link>
+      </li>
+    ))}
+  </ul>
+</nav>
         <div className="flex items-center gap-3">
           <button className="  xl:hidden px-3 py-2 bg-[#2B76C1] text-white rounded-lg hover:bg-blue-600 focus:outline-none">
             <FaBars size={24} onClick={toggleMenu} />

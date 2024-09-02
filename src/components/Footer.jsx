@@ -86,7 +86,9 @@ export const Footer = () => {
      
     </div>
    </div>
-   <hr className='bg-gray-600 w-[85%] mx-auto px-12'></hr>
+   <div className='bg-gray-100'>
+   <hr className='  w-[85%] mx-auto bg-gray-200  p-[1px]'></hr>
+   </div>
    <Subfooter/>
    </>
   )

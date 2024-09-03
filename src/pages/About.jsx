@@ -36,20 +36,24 @@ const About = () => {
         </div>
       </MainWrapper>
       <MainWrapper>
-        <div className="w-[95%]  px-8 mx-auto mb-20 flex flex-col md:flex-row items-start  md:items-center space-y-4 lg:space-y-0 md:space-x-24 ">
-          <h1 className=" text-[1rem] md:text-[2rem] poppins font-[600]">
-            Building software for
-            <span className="text-[#2B76C1]"> World changers</span>
-          </h1>
-          <p className="text-gray-600 max-w-xl text-base">
-            Devlynx is a digital acceleration consultancy founded in 2008.
-            Netguru builds digital products that let people do things
-            differently – offering digital acceleration tools, resources and
-            know-how to companies of all shapes and sizes – to make
-            beautifully designed digital products in a way that’s fast and
-            fits their needs.
-          </p>
+      <div className="   w-[90%] mx-auto  mb-20 flex flex-col  lg:flex-row justify-center md:justify-start  space-y-4 lg:space-y-0 lg:space-x-12">
+        <div className="  w-[80%] mx-auto lg:w-[45%]"> 
+        <h1 className="text-[1.5rem] md:text-[2.25rem] poppins font-[600]">
+        Building software for World   
+          <span className="text-[#2B76C1]"> changers </span>
+        </h1>
         </div>
+        <div className=" w-[80%] mx-auto lg:w-[45%] "> 
+        <p className="text-[#626262] poppins font-[400]  text-base">
+          We help deliver digital excellence at every stage of the product
+          journey, from early ideation to research, prototyping, testing,
+          launch, and ongoing support. Explore our end-to-end services designed
+          to improve business metrics and deliver delightful digital
+          experiences.
+        </p>
+        </div>
+       
+      </div>
         <div className="w-[95%] mb-20">
           <div className=" w-full md:w-[60%] flex flex-col items-start">
             <div className="flex items-center lg:items-start">
@@ -159,7 +163,7 @@ const About = () => {
           <Button
             value={"Work with us"}
             customClass={
-              " mt-8 poppins font-[600] text-sm bg-[#2B76C1] whitespace-nowrap  w-52 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400]  transition-all duration-300"
+              " mt-8 poppins font-[600] text-sm bg-[#2B76C1] whitespace-nowrap  w-48 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400]  transition-all duration-300"
             }
           />
         </div>

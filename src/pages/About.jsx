@@ -2,11 +2,10 @@ import React from "react";
 import MainWrapper from "../components/Wrapper/MainWrapper";
 import Button from "../components/Buttons/Button";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-import { Imagesection } from "../components/Home/ImageSection/Imagesection";
 import Aboutimg1 from "../asset/images/about/aboutimage1.svg";
-import Aboutimg2 from "../asset/images/about/aboutimage2.svg";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import { Bannersection } from "../components/About/Bannersection";
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -30,39 +29,38 @@ const About = () => {
           <Button
             value={"Lets’s work together!"}
             customClass={
-              "poppins font-[700] text-sm bg-[#2B76C1] whitespace-nowrap  w-52 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] transition-all duration-300"
+              "poppins font-[700] text-sm bg-[#2B76C1] whitespace-nowrap  w-44 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] transition-all duration-300"
             }
           />
         </div>
       </MainWrapper>
       <MainWrapper>
-      <div className="   w-[90%] mx-auto  mb-20 flex flex-col  lg:flex-row justify-center md:justify-start  space-y-4 lg:space-y-0 lg:space-x-12">
-        <div className="  w-[80%] mx-auto lg:w-[45%]"> 
-        <h1 className="text-[1.5rem] md:text-[2.25rem] poppins font-[600]">
-        Building software for World   
-          <span className="text-[#2B76C1]"> changers </span>
-        </h1>
+        <div className="   w-[90%] mx-auto  mb-20 flex flex-col  lg:flex-row justify-center md:justify-start  space-y-4 lg:space-y-0 lg:space-x-12">
+          <div className="  w-[80%] mx-auto lg:w-[45%]">
+            <h1 className="text-[1.5rem] md:text-[2.25rem] poppins font-[600]">
+              Building software for World
+              <span className="text-[#2B76C1]"> changers </span>
+            </h1>
+          </div>
+          <div className=" w-[80%] mx-auto lg:w-[45%] ">
+            <p className="text-[#626262] poppins font-[400]  text-base">
+              We help deliver digital excellence at every stage of the product
+              journey, from early ideation to research, prototyping, testing,
+              launch, and ongoing support. Explore our end-to-end services
+              designed to improve business metrics and deliver delightful
+              digital experiences.
+            </p>
+          </div>
         </div>
-        <div className=" w-[80%] mx-auto lg:w-[45%] "> 
-        <p className="text-[#626262] poppins font-[400]  text-base">
-          We help deliver digital excellence at every stage of the product
-          journey, from early ideation to research, prototyping, testing,
-          launch, and ongoing support. Explore our end-to-end services designed
-          to improve business metrics and deliver delightful digital
-          experiences.
-        </p>
-        </div>
-       
-      </div>
         <div className="w-[95%] mb-20">
           <div className=" w-full md:w-[60%] flex flex-col items-start">
             <div className="flex items-center lg:items-start">
               <FaQuoteLeft className="text-blue-400 text-[1rem] md:text-[4rem] mb-40 " />
               <p className="text-gray-700 text-[24px]  ml-4 inline">
                 Since the beginning, our main goal was to help entrepreneurs
-                build new software solutions that matter. Building and
-                shipping products that are helpful for people, making the
-                world a better place, for everyone, including ourselves.
+                build new software solutions that matter. Building and shipping
+                products that are helpful for people, making the world a better
+                place, for everyone, including ourselves.
                 <FaQuoteRight className="text-blue-400 text-xl inline" />
               </p>
             </div>
@@ -76,40 +74,28 @@ const About = () => {
         >
           <div className="text-center">
             <p className="text-[2rem] poppins font-[400] leading-[70px] text-[#2B76C1]">
-              {inView && (
-                <CountUp start={0} end={5} duration={5.75} />
-              )}
-              +
+              {inView && <CountUp start={0} end={5} duration={5.75} />}+
             </p>
             <p className="text-gray-600">Years on the market</p>
           </div>
           <div className="border-l border-l-blue-400 h-24 hidden md:block"></div>
           <div className="text-center">
             <p className="text-[2rem] poppins font-[600] leading-[70px] text-[#2B76C1]">
-              {inView && (
-                <CountUp start={0} end={100} duration={2.75} />
-              )}
-              +
+              {inView && <CountUp start={0} end={100} duration={2.75} />}+
             </p>
             <p className="text-gray-600">People on board</p>
           </div>
           <div className="border-l border-l-blue-400 h-16 hidden md:block"></div>
           <div className="text-center">
             <p className="text-[2rem] poppins font-[600] leading-[70px] text-[#2B76C1]">
-              {inView && (
-                <CountUp start={0} end={200} duration={2.75} />
-              )}
-              +
+              {inView && <CountUp start={0} end={200} duration={2.75} />}+
             </p>
             <p className="text-gray-600">Projects delivered</p>
           </div>
           <div className="border-l border-l-blue-400 h-16 hidden md:block"></div>
           <div className="text-center">
             <p className="text-[2rem] poppins font-[600] leading-[70px] text-[#2B76C1]">
-              {inView && (
-                <CountUp start={0} end={50} duration={3.75} />
-              )}
-              +
+              {inView && <CountUp start={0} end={50} duration={3.75} />}+
             </p>
             <p className="text-gray-600">Current NPS score</p>
           </div>
@@ -139,35 +125,14 @@ const About = () => {
           </div>
         </div>
       </MainWrapper>
-
-      <div className="w-[90%] sm:w-full relative h-screen flex items-center justify-center mx-auto">
-        {/* <!-- Image --> */}
-        <img
-          src={Aboutimg2}
-          alt="Background Image"
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        />
-
-        {/* <!-- Overlay --> */}
-        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-
-        {/* <!-- Content --> */}
-        <div className="relative z-20 text-center text-white">
-          <h1 className="text-[1rem] md:text-[2rem] poppins font-[600] mb-4">
-            A recognizable & awarded <br /> partner
-          </h1>
-          <p className="text-base md:text-[1rem] poppins font-[600] mb-8">
-            Own the change in the market with AI-assisted productivity, rapid{" "}
-            <br /> prototyping, low-code development, and next-gen design.
-          </p>
-          <Button
-            value={"Work with us"}
-            customClass={
-              " mt-8 poppins font-[600] text-sm bg-[#2B76C1] whitespace-nowrap  w-48 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400]  transition-all duration-300"
-            }
-          />
-        </div>
-      </div>
+      <Bannersection
+        heading={"A recognizable & awarded partner"}
+        text={
+          " Own the change in the market with AI-assisted productivity, rapid prototyping, low-code development, and next-gen design."
+        }
+        imagetextstyle = {"max-w-xl"}
+        headingstyle ={"max-w-[89%]  !mx-auto !text-center"}
+      />
     </>
   );
 };

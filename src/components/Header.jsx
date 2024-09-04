@@ -1,23 +1,19 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import headerlogo from "../asset/images/header/logo.png";
 import { Navbaritems } from "../data/navbar/navbaritems";
 import { FaBars } from "react-icons/fa";
 import Logo from "./Logo/Logo";
 import Button from "./Buttons/Button";
 
 export const Header = () => {
-  const location = useLocation();
   const { pathname } = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const classLink =
-    "flex items-center gap-3 px-4 py-4  hover:no-underline  rounded-md";
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full bg-red-900">
       <div className="flex items-center justify-between w-[85%] mx-auto ">
         <Logo />
 

@@ -3,6 +3,7 @@ import MainWrapper from "../components/Wrapper/MainWrapper";
 import Servicesheading from "../components/Services/Servicesheading";
 import { Ideationservicescard } from "../components/Services/Ideationservicescard";
 import { ServicespageItem } from "../data/Servicespage data/ServicespageItem";
+import { Bannersection } from "../components/About/Bannersection";
 const Service = () => {
   return (
     <>
@@ -62,6 +63,7 @@ const Service = () => {
           evaluation. Learn how to accelerate the first steps of the innovation
           process. "
             CustomClass={"mb-16"}
+            CustomClasstext ={"!max-w-xl"}
           />
 
           <div className="w-[90%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 sm:gap-4">
@@ -71,7 +73,7 @@ const Service = () => {
                 image={item.image}
                 text={item.text}
                 para={item.para}
-               
+                CustomClasstext ={"!max-w-2xl"}
               />
             ))}
           </div>
@@ -84,7 +86,7 @@ const Service = () => {
             subheading="Deliver beautiful and usable products that solve user problems
                and move the needle."
             CustomClass={"mb-16"}
-            CustomClasstext = {"!max-w-xl"}
+            CustomClasstext = {"!max-w-[450px]"}
           />
 
           <div className="w-[90%] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-12 sm:gap-4">
@@ -100,6 +102,110 @@ const Service = () => {
           </div>
         </div>
       </MainWrapper>
+      <MainWrapper CustomClass={" !py-0 !px-0"}>
+        <div class="w-full  bg-gray-100 py-16">
+          <Servicesheading
+            heading="Web Development Services"
+            subheading="Leverage reliable processes and speed up delivery across technology stacks.
+              How can we help you?"
+            CustomClass={"mb-16"}
+            CustomClasstext = {"!max-w-xl"}
+          />
+
+          <div className="w-[90%] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-12 sm:gap-4">
+            {ServicespageItem.web.map((item, index) => (
+              <Ideationservicescard
+                key={index}
+                image={item.image}
+                text={item.text}
+                para={item.para}
+               
+              />
+            ))}
+          </div>
+        </div>
+      </MainWrapper>
+      <MainWrapper CustomClass={" !py-0 !px-0"}>
+        <div class="w-full  bg-gray-100 py-16">
+          <Servicesheading
+            heading="Mobile Development Services"
+
+            subheading="Get professional support from the mobile team at every stage of development"
+
+            CustomClass={"mb-16"}
+            CustomClasstext = {"!max-w-[400px]"}
+          />
+
+          <div className="w-[90%] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 sm:gap-4">
+            {ServicespageItem.mobile.map((item, index) => (
+              <Ideationservicescard
+                key={index}
+                image={item.image}
+                text={item.text}
+                para={item.para}
+               
+              />
+            ))}
+          </div>
+        </div>
+      </MainWrapper>
+      <MainWrapper CustomClass={" !py-0 !px-0"}>
+        <div class="w-full  bg-white py-16">
+          <Servicesheading
+            heading="Low-code Development Services"
+
+
+            subheading="Create reliable and scalable solutions faster than ever. Discover why we like minimalism"
+
+
+            CustomClass={"mb-16"}
+            CustomClasstext = {"!max-w-[400px]"}
+          />
+
+          <div className=" w-[80%] sm:w-[50%] mx-auto grid grid-cols-2  md:grid-cols-3  gap-12 sm:gap-8">
+            {ServicespageItem.lowcode.map((item, index) => (
+              <Ideationservicescard
+                key={index}
+                image={item.image}
+                text={item.text}
+                para={item.para}
+               
+              />
+            ))}
+          </div>
+        </div>
+      </MainWrapper>
+      <MainWrapper CustomClass={" !py-0 !px-0"}>
+        <div class="w-full  bg-gray-100 py-16 ">
+          <Servicesheading
+            heading="Support and management Services"
+
+            subheading="Future-proof your products and services and keep your finger on the pulse. Learn what we can do for business. "
+            CustomClass={"mb-16"}
+            CustomClasstext ={"!max-w-xl"}
+          />
+
+          <div className="w-[90%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 sm:gap-4">
+            {ServicespageItem.support.map((item, index) => (
+              <Ideationservicescard
+                key={index}
+                image={item.image}
+                text={item.text}
+                para={item.para}
+                CustomClasstext ={"!max-w-2xl"}
+              />
+            ))}
+          </div>
+        </div>
+      </MainWrapper>
+      <Bannersection
+        heading={"Launch your product with us"}
+        text={
+          " Own the change in the market with AI-assisted productivity, rapid prototyping, low-code development, and next-gen design."
+        }
+        imagetextstyle = {"max-w-xl"}
+        headingstyle ={"max-w-[59%]  !mx-auto !text-center"}
+      />
     </>
   );
 };

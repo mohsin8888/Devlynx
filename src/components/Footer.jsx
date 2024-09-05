@@ -62,18 +62,19 @@ export const Footer = () => {
         <div key={index} className="space-y-4">
           <h2 className="text-[24px] inter font-[600] text-[#000]">{item.heading}</h2>
           <ul className="space-y-3">
-            <li className="flex justify-center md:justify-start items-center gap-3">
-              <Link to="#">
-                <img src={item.phoneimage} alt="Phone" className="w-6 h-6 sm:w-4  sm:h-4" />
-              </Link>
-              <span className="text-base inter font-[400] text-[#000000]">{item.phoneimagetext}</span>
-            </li>
-            <li className="flex justify-center md:justify-start items-center gap-3">
-              <Link to="#">
-                <img src={item.envlopimage} alt="Email" className="w-6 h-6 sm:w-4  sm:h-4" />
-              </Link>
-              <span className="text-base inter font-[400] text-[#000000]">{item.envlopimagetext}</span>
-            </li>
+          <li className="flex justify-center md:justify-start items-center">
+         <Link to={item.phonelink} className="flex items-center gap-3">
+      <img src={item.phoneimage} alt="Phone" className="w-6 h-6 sm:w-4 sm:h-4" />
+    <span className="text-base inter font-[400] text-[#000000]">{item.phoneimagetext}</span>
+       </Link>
+      </li>
+        <li className="flex justify-center md:justify-start items-center">
+  <Link to={item.envloplink} className="flex items-center gap-3">
+    <img src={item.envlopimage} alt="Email" className="w-6 h-6 sm:w-4 sm:h-4" />
+    <span className="text-base inter font-[400] text-[#000000]">{item.envlopimagetext}</span>
+  </Link>
+</li>
+           
             <li className="flex justify-center md:justify-start items-center gap-3">
               <Link to="#">
                 <img src={item.locationimage} alt="Location" className=" w-8 h-8 sm:w-6  sm:h-6" />

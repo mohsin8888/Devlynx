@@ -10,7 +10,7 @@ export const HeroSection = ({
     <div className={` flex flex-col md:flex-row items-center gap-x-8 ${CustomClass}`}>
       {/* <!-- Image Section --> */}
       <div className="w-full md:w-[40%] flex justify-center items-center ">
-        <LottieAnimation />
+        <LottieAnimation  />
       </div>
 
       {/* <!-- Text Section --> */}
@@ -19,7 +19,7 @@ export const HeroSection = ({
           {heading}
         </h2> */}
         <p
-          className={`text-[#626262] poppins font-[400] text-xl   sm:leading-[35px] ${CustomClaspara}`}
+          className={`text-[#626262] poppins font-[400] text-xl  lg:leading-[35px] ${CustomClaspara}`}
         >
           {para}
         </p>

@@ -15,17 +15,17 @@ import { HeroSection } from "../components/Home/HeroSection/HeroSection";
 const Home = () => {
   return (
     <>
-
-      <MainWrapper CustomClass={" CustomClass= md:!px-28 !mt-16"} >
+      <MainWrapper CustomClass={" CustomClass= !px-8 !sm:px-16 md:!px-28  "}>
         <HeroSection
-           CustomClass=""
+          CustomClass=""
           para="Our primary goal is to develop smart, intelligent solutions that transform your business. We specialise in creating innovative technologies that address complex business challenges, and significantly enhance productivity. Partner with us to unlock the full potential of your business through expert development"
-          CustomClaspara=""
+          CustomClaspara=" !mt-12"
         />
       </MainWrapper>
-      <MainWrapper  CustomClass={"!px-8 md:!px-28"}>
+      <MainWrapper CustomClass={" !px-0 sm:!px-4 md:!px-28"}>
         <Heading
           heading={"INNOVATION WITH AUTOMATION"}
+          CustomClasstext={" w-[90%]  md:!w-[90%] lg:!w-[70%]  !mx-auto"}
           subheading={
             "We craft efficient and responsive business models using proactive, multi-dimensional solutions. Our automated frameworks and business intelligence empower enterprises to achieve greater efficiency and success."
           }
@@ -36,11 +36,12 @@ const Home = () => {
               icon={item.icon}
               Cardheadibg={item.Cardheadibg}
               para={item.Cardpara}
+              Customstylepara={"!px-0"}
             />
           ))}
         </div>
       </MainWrapper>
-      <MainWrapper CustomClass={"!w-[95%] mx-auto"}>
+      <MainWrapper CustomClass={"!w-[95%] mx-auto !px-4"}>
         <Imagesection
           CustomClass=""
           ImageClass=" w-[500px] object-cover  "
@@ -52,16 +53,18 @@ const Home = () => {
             solutions, and healthcare mobile apps and websites, enhancing your
             digital presence and helping you achieve your strategic goals in a
             rapidly evolving digital landscape."
+            CustomStyletext ={""}
         />
       </MainWrapper>
 
       <MainWrapper CustomClass={"!px-8 md:!px-20"}>
         <Ourservicessection />
       </MainWrapper>
-      <MainWrapper>
+      <MainWrapper CustomClass={"!px-2 md:!px-20"}>
         <Heading
           CustomClass=""
           heading={"BEST SOLUTION IN RIGHT TIME AND BUDGET"}
+          CustomClasshea ={""}
           subheading={
             "Time is running out. Don’t waste it on thinking too much. Share your problems with us.Our expert professionals offer you complete guidance about the right solutions to your problems in minimum time and through cost-efficient approaches designed to generate business growth."
           }

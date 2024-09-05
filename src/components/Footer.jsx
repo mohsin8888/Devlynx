@@ -9,7 +9,7 @@ export const Footer = () => {
   return (
    <>
    <div className="bg-gray-100 py-8 b">
-     <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center md:text-left">
+     <div className=" w-[80%] mx-auto  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center  justify-center md:text-left">
       
       {Socialmediaitem.map((item, index) => (
         <div key={index} className="space-y-4">
@@ -17,27 +17,27 @@ export const Footer = () => {
           <p className="text-base inter font-[400] text-black">{item.subheading}</p>
           <ul className="flex justify-center md:justify-start space-x-4">
             <li>
-              <Link to="#">
+              <Link to={item.linkdinlink}>
                 <img src={item.linkdin} alt="LinkedIn" className="w-6 h-6" />
               </Link>
             </li>
             <li>
-              <Link to="#">
+              <Link to={item.facebooklink}>
                 <img src={item.facebook} alt="Facebook" className="w-6 h-6" />
               </Link>
             </li>
             <li>
-              <Link to="#">
+              <Link to={item.instalink}>
                 <img src={item.insta} alt="Instagram" className="w-6 h-6" />
               </Link>
             </li>
             <li>
-              <Link to="#">
+              <Link to={item.twitterlink}>
                 <img src={item.twitter} alt="Twitter" className="w-6 h-6" />
               </Link>
             </li>
             <li>
-              <Link to="#" className="text-gray-600 hover:text-gray-800">
+              <Link to={item.whatsappfooter} className="text-gray-600 hover:text-gray-800">
                 <img src={item.whatsappfooter} alt="WhatsApp" className="w-6 h-6" />
               </Link>
             </li>
@@ -64,19 +64,19 @@ export const Footer = () => {
           <ul className="space-y-3">
             <li className="flex justify-center md:justify-start items-center gap-3">
               <Link to="#">
-                <img src={item.phoneimage} alt="Phone" className="w-4 h-4" />
+                <img src={item.phoneimage} alt="Phone" className="w-6 h-6 sm:w-4  sm:h-4" />
               </Link>
               <span className="text-base inter font-[400] text-[#000000]">{item.phoneimagetext}</span>
             </li>
             <li className="flex justify-center md:justify-start items-center gap-3">
               <Link to="#">
-                <img src={item.envlopimage} alt="Email" className="w-4 h-4" />
+                <img src={item.envlopimage} alt="Email" className="w-6 h-6 sm:w-4  sm:h-4" />
               </Link>
               <span className="text-base inter font-[400] text-[#000000]">{item.envlopimagetext}</span>
             </li>
             <li className="flex justify-center md:justify-start items-center gap-3">
               <Link to="#">
-                <img src={item.locationimage} alt="Location" className="w-6 h-6" />
+                <img src={item.locationimage} alt="Location" className=" w-8 h-8 sm:w-6  sm:h-6" />
               </Link>
               <span className="text-[#000000] text-base font-[400] flex items-center">{item.locationimagetext}</span>
             </li>

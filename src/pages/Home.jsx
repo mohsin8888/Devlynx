@@ -15,9 +15,10 @@ import { HeroSection } from "../components/Home/HeroSection/HeroSection";
 const Home = () => {
   return (
     <>
-      <MainWrapper CustomClass={" CustomClass=!px-8 md:!px-28 !mt-16"} >
+
+      <MainWrapper CustomClass={" CustomClass= md:!px-28 !mt-16"} >
         <HeroSection
-           CustomClass="!px-12"
+           CustomClass=""
           para="Our primary goal is to develop smart, intelligent solutions that transform your business. We specialise in creating innovative technologies that address complex business challenges, and significantly enhance productivity. Partner with us to unlock the full potential of your business through expert development"
           CustomClaspara=""
         />

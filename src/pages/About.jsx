@@ -29,7 +29,7 @@ const About = () => {
           <Button
             value={"Lets’s work together!"}
             customClass={
-              "poppins font-[700] text-sm bg-[#2B76C1] whitespace-nowrap  w-44 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] transition-all duration-300"
+              "poppins font-[700] text-sm bg-[#2B76C1] whitespace-nowrap !w-52 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] transition-all duration-300"
             }
           />
         </div>

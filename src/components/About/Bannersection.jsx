@@ -25,7 +25,7 @@ export const Bannersection = ({ heading,text,headingstyle,imagetextstyle,Customc
       <Button
         value={"Work with us"}
         customClass={
-          " mt-8 poppins font-[600] text-sm bg-[#2B76C1] whitespace-nowrap  w-40 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400]  transition-all duration-300"
+          " mt-8 poppins font-[600] text-sm bg-[#2B76C1] whitespace-nowrap  !w-52 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400]  transition-all duration-300"
         }
       />
     </div>

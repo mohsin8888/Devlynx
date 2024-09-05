@@ -12,7 +12,7 @@ const Contact_Us = () => {
            heading={"Contact"}
            CustomClasshea ={"!text-6xl !text-[#000] !pb-16"}
            />
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20">
+        <div class=" w-[90%] mx-auto flex flex-col md:flex-row gap-20">
            
         <div class="md:w-1/2 mb-8 md:mb-0">
             <h2 class="text-2xl font-bold mb-4">Bringing your dream digital ideas to life with our expertise</h2>
@@ -23,27 +23,27 @@ const Contact_Us = () => {
         <div key={index}>
           <ul className="flex  space-x-4">
             <li>
-              <Link to="#">
+              <Link to={item.linkdinlink}>
                 <img src={item.linkdin} alt="LinkedIn" className="w-6 h-6" />
               </Link>
             </li>
             <li>
-              <Link to="#">
+              <Link to={item.facebooklink}>
                 <img src={item.facebook} alt="Facebook" className="w-6 h-6" />
               </Link>
             </li>
             <li>
-              <Link to="#">
+              <Link to={item.instalink}>
                 <img src={item.insta} alt="Instagram" className="w-6 h-6" />
               </Link>
             </li>
             <li>
-              <Link to="#">
+              <Link to={item.twitterlink}>
                 <img src={item.twitter} alt="Twitter" className="w-6 h-6" />
               </Link>
             </li>
             <li>
-              <Link to="#">
+              <Link to={item.whatsappfooterlink}>
                 <img src={item.whatsappfooter} alt="WhatsApp" className="w-6 h-6" />
               </Link>
             </li>

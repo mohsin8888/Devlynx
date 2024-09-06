@@ -14,12 +14,12 @@ const About = () => {
 
   return (
     <>
-      <MainWrapper>
-        <div className="max-w-full mx-auto text-center">
+      <MainWrapper CustomClass={"px-4"}>
+        <div className="max-[95%] mx-auto text-center">
           <h2 className="text-4xl poppins font-[600] leading-[54px]  mb-4 text-[#000]">
             Work with one of the fastest-growing
           </h2>
-          <h3 className="text-4xl poppins font-[600] leading-[54px]  text-[#2B76C1] mb-4">
+          <h3 className="text-[2rem]  poppins font-[400] sm:font-[600] leading-[45px]  text-[#2B76C1] mb-4">
             digital consultancies in EU
           </h3>
           <p className="max-w-3xl  mb-12 text-lg poppins font-[400] text-[#000]  ">

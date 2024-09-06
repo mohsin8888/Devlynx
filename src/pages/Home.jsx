@@ -41,10 +41,10 @@ const Home = () => {
           ))}
         </div>
       </MainWrapper>
-      <MainWrapper CustomClass={"!w-[95%] mx-auto !px-4"}>
+      <MainWrapper CustomClass={"!w-[90%] mx-auto !px-4"}>
         <Imagesection
-          CustomClass=""
-          ImageClass=" w-[500px] object-cover  "
+          CustomClass="sm:!gap-x-2"
+          ImageClass=" md:!w-[85%] object-cover  "
           image={frameimage}
           heading="OUR MISSION"
           para="  At Devlynx, our mission is to lead in delivering innovative and
@@ -62,7 +62,7 @@ const Home = () => {
       </MainWrapper>
       <MainWrapper CustomClass={"!px-2 md:!px-20"}>
         <Heading
-          CustomClass=""
+           CustomClasstext={" w-[90%]  md:!w-[90%] lg:!w-[80%]  !mx-auto"}
           heading={"BEST SOLUTION IN RIGHT TIME AND BUDGET"}
           CustomClasshea ={""}
           subheading={

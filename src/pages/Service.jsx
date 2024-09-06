@@ -7,28 +7,30 @@ import { Bannersection } from "../components/About/Bannersection";
 const Service = () => {
   return (
     <>
-      <MainWrapper>
-        <div className="max-w-full mx-auto text-center mb-12">
-          <h2 className="text-4xl poppins font-[600] leading-[54px] mb-4 text-[#000]">
+      <MainWrapper  CustomClass={"!px-0 sm:!px-16"}>
+        <div className="max-w-full mx-auto text-center sm:mb-12">
+            
+          <h2 className="text-[2.3rem] poppins font-[600]   text-[#000]">
             Digital acceleration services for
           </h2>
-          <p className="mt-2 text-4xl poppins font-[600] leading-[54px] text-[#2B76C1] mb-12">
+          <p className=" text-[2rem] sm:text-[2.3rem] poppins font-[600]  text-[#2B76C1] mb-6 sm:mb-12">
             business growth
           </p>
-          <span className="max-w-4xl mb-20 text-lg poppins font-[400] text-[#000]">
+          
+          <span className=" px-2 sm:px-0 text-base sm:text-lg poppins font-[400] text-[#000] ">
             Design. Development. Consulting.
             <br />5 years and counting.
           </span>
         </div>
       </MainWrapper>
-      <div className="   w-[90%] mx-auto  mb-20 flex flex-col  lg:flex-row justify-center md:justify-start  space-y-4 lg:space-y-0 lg:space-x-12">
-        <div className="  w-[80%] mx-auto lg:w-[45%]">
+      <div className="   w-[90%] mx-auto  mb-8 sm:mb-20 flex flex-col  lg:flex-row justify-center md:justify-start  space-y-2 lg:space-y-0 lg:space-x-12">
+        <div className="  w-[90%] sm:w-[80%] mx-auto lg:w-[40%]">
           <h1 className="text-[2rem] md:text-[2.2rem] poppins font-[600]">
             One-stop shop for
             <span className="text-[#2B76C1]"> digital </span>
           </h1>
         </div>
-        <div className=" w-[80%] mx-auto lg:w-[45%] ">
+        <div className=" w-[90%] sm:w-[80%] mx-auto lg:w-[45%] ">
           <p className="text-[#626262] poppins font-[400]  text-base">
             We help deliver digital excellence at every stage of the product
             journey, from early ideation to research, prototyping, testing,
@@ -38,7 +40,7 @@ const Service = () => {
           </p>
         </div>
       </div>
-      <div className="   w-[90%] mx-auto  mb-20 flex flex-col  lg:flex-row justify-center md:justify-start  space-y-4 lg:space-y-0 lg:space-x-12">
+      <div className="   w-[90%] mx-auto  mb-8 sm:mb-20 flex flex-col  lg:flex-row justify-center md:justify-start  space-y-4 lg:space-y-0 lg:space-x-12">
         <div className="  w-[80%] mx-auto lg:w-[45%]">
           <h1 className="text-[2rem] md:text-[2.2rem]  poppins font-[600]">
             Ideation and

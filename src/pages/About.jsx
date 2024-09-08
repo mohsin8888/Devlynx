@@ -17,7 +17,7 @@ const About = () => {
       <MainWrapper CustomClass={"px-4"}>
         <div className="max-[95%] mx-auto text-center">
           <h2 className="text-4xl poppins font-[600] leading-[54px]  mb-4 text-[#000]">
-            Work with one of the fastest-growing
+            Work with one of the fastest-growing  the book
           </h2>
           <h3 className="text-[2rem]  poppins font-[400] sm:font-[600] leading-[45px]  text-[#2B76C1] mb-4">
             digital consultancies in EU

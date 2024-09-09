@@ -4,17 +4,16 @@ import { Jobcard } from "../components/Careers/Jobcard";
 const Careers = () => {
   return (
     <>
-      <MainWrapper>
-        <div class="max-w-full mx-auto text-center">
-          <h2 class="text-4xl poppins font-[600] leading-[54px]  mb-4 text-[#000]">
+      <MainWrapper CustomClass={" !px-4 sm:!px-3"}>
+        <div class="max-w-full ">
+          <h2 class="text-[2.5rem] poppins  text-center font-[600]  mb-4 text-[#000]">
             Your Success Story Start Here
           </h2>
-          <p class="mt-4 text-lg poppins font-[400] text-[#2B76C1]  mb-4">
-            Your potential knows no bounds, and this is where it all begins!{" "}
-            <br />
+          <p class="mt-4 w-[100%] md:w-[80%] lg:w-[50%] text-center  mx-auto text-[1.2rem] poppins font-[600] text-[#2B76C1]  mb-4">
+            Your potential knows no bounds, and this is where it all begins!
             We provide a launchpad for your ambitions.
           </p>
-          <p className="max-w-4xl  mb-20 text-lg poppins font-[400] text-[#000]  ">
+          <p className=" w-[100%] md:w-[80%]  lg::w-[10%]  text-center mx-auto mb-20 text-[1rem] sm:text-[1rem] poppins font-[600] text-[#000]  ">
             Join DevLynx team of developers, consultants, and marketers building
             exceptional apps and software, powered by expert consultancy. Our
             global offices in the US, Canada, Malaysia, and Pakistan redefine
@@ -22,7 +21,7 @@ const Careers = () => {
             us.
           </p>
         </div>
-        <div className=" bg-[#2B76C1] rounded-lg text-[#FFFFFF] text-4xl poppins font-[800] leading-[54px] p-4 w-[90%] max-auto text-center">
+        <div className=" bg-[#2B76C1] sm:rounded-lg text-[#FFFFFF] text-[1.5rem] sm:text-[2.3rem] poppins font-[800]  p-3 sm:p-4  w-[100%] sm:w-[85%] max-auto text-center">
           <span>Current Job Openings</span>
         </div>
       </MainWrapper>

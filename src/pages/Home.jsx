@@ -8,14 +8,12 @@ import { Imagesection } from "../components/Home/ImageSection/Imagesection";
 import frameimage from "../asset/images/home/frame-img.svg";
 import { BestCarditem } from "../data/BEST SOLUTION Section/BestCarditem";
 import { Solutioncard } from "../components/Card/Solutioncard";
-import { SiKotlin } from "react-icons/si";
 import { Ourservicessection } from "../components/Home/OurservicesSection/Ourservicessection";
-import { LottieAnimation } from "../components/Home/HeroSection/LottieAnimation";
 import { HeroSection } from "../components/Home/HeroSection/HeroSection";
 const Home = () => {
   return (
     <>
-      <MainWrapper CustomClass={" CustomClass= !px-8 !sm:px-16 md:!px-28  "}>
+      <MainWrapper CustomClass={"!px-6 sm:!px-16 md:!px-28"}>
         <HeroSection
           CustomClass=""
           para="Our primary goal is to develop smart, intelligent solutions that transform your business. We specialise in creating innovative technologies that address complex business challenges, and significantly enhance productivity. Partner with us to unlock the full potential of your business through expert development"

@@ -5,7 +5,7 @@ const MainWrapper = ({
     CustomClass
 }) => {
   return (
-    <div className={`bg-white min-h-[50vh] flex flex-col items-center justify-center py-16 px-16 ${CustomClass}`}>
+    <div className={`bg-white min-h-[50vh]  flex flex-col items-center justify-center py-16 px-16 ${CustomClass}`}>
         {children}
     </div>
   )

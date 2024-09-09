@@ -48,11 +48,11 @@ const Careers = () => {
    
   />
 </div>
-   <div className="text-blue-700 font-bold  pl-8 pb-2 shadow-2xl">
+   <div className="text-blue-700 font-bold  w-[90%] mx-auto pl-8 ">
     <h2 className="text-[2rem]">Designing</h2>
     <div className="bg-blue-700 h-[1vh] w-[5%] rounded-xl"></div>
   </div>
-<div className="w-full flex flex-col mt-7 ">
+<div className="w-full flex flex-col mt-7 py-8  shadow-2xl">
   <Jobcard
     Cardheading={"Graphic Designer"}
     Cardpara={

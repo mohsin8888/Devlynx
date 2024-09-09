@@ -8,7 +8,7 @@ export const Subfooter = () => {
     <p className="text-sm inter font-[400] text-[#000000]">
       © 2024 Devlynx. All rights reserved.
     </p>
-    <div className="flex space-x-4 mt-2 md:mt-0">
+    <div className="flex  flex-wrap  justify-center items-center gap-y-2 space-x-4 mt-2 md:mt-0">
     <Link to="#" className=" whitespace-nowrap hover:underline text-sm inter font-[400] text-[#000000]">Privacy Policy</Link>
     <Link to="#" className=" whitespace-nowrap hover:underline text-sm inter font-[400] text-[#000000]">Terms of Use</Link>
     <Link to="#" className=" whitespace-nowrap hover:underline text-sm inter font-[400] text-[#000000]">Sales and Refunds</Link>

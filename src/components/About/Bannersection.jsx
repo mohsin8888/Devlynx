@@ -3,12 +3,12 @@ import Aboutimg2 from "../../asset/images/about/aboutimage2.svg";
 import Button from '../Buttons/Button';
 export const Bannersection = ({ heading,text,headingstyle,imagetextstyle,Customclass}) => {
   return (
-    <div className="w-[90%] sm:w-full relative h-screen flex items-center justify-center mx-auto">
+    <div className="w-[100%]  relative h-screen flex items-center justify-center mx-auto">
     {/* <!-- Image --> */}
     <img
       src={Aboutimg2}
       alt="Background Image"
-      className="absolute inset-0 w-full h-full object-cover z-0"
+      className="absolute  w-full h-full object-cover z-0"
     />
 
     {/* <!-- Overlay --> */}

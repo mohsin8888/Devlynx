@@ -35,7 +35,7 @@ const Home = () => {
               icon={item.icon}
               Cardheadibg={item.Cardheadibg}
               para={item.Cardpara}
-              Customstylepara={""}
+             
             />
           ))}
         </div>

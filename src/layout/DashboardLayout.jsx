@@ -6,7 +6,7 @@ export const DashboardLayout = () => {
   return (
   <>
   <div className="flex min-h-screen w-screen flex-col">
-        <div className='h-[14vh] flex items-center border-b border-[#2B76C1] '>
+        <div className=' h-[26vh] sm:h-[14vh] flex items-center border-b border-[#2B76C1] '>
           <Header />
         </div>
         <div className="flex-1">

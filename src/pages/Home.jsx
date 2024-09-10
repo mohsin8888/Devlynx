@@ -17,29 +17,30 @@ const Home = () => {
         <HeroSection
           CustomClass=""
           para="Our primary goal is to develop smart, intelligent solutions that transform your business. We specialise in creating innovative technologies that address complex business challenges, and significantly enhance productivity. Partner with us to unlock the full potential of your business through expert development"
-          CustomClaspara=" !mt-12"
+          CustomClaspara=" !mt-12 !text-center sm:!text-start"
         />
       </MainWrapper>
-      <MainWrapper CustomClass={" !px-0 sm:!px-4 md:!px-28"}>
+      <MainWrapper CustomClass={" !px-0 sm:!px-4 md:!px-28 "}>
         <Heading
           heading={"INNOVATION WITH AUTOMATION"}
-          CustomClasstext={" w-[90%]  md:!w-[90%] lg:!w-[70%]  !mx-auto"}
+          CustomClasstext={"!w-[90%] lg:!w-[70%]  !mx-auto"}
+        
           subheading={
             "We craft efficient and responsive business models using proactive, multi-dimensional solutions. Our automated frameworks and business intelligence empower enterprises to achieve greater efficiency and success."
           }
         />
-        <div class="flex flex-wrap justify-evenly items-center pt-20 ">
+        <div class="flex flex-wrap justify-evenly  mt-4 sm:pt-20 ">
           {Carditems.map((item, index) => (
             <Servicescard
               icon={item.icon}
               Cardheadibg={item.Cardheadibg}
               para={item.Cardpara}
-              Customstylepara={"!px-0"}
+              Customstylepara={""}
             />
           ))}
         </div>
       </MainWrapper>
-      <MainWrapper CustomClass={"!w-[90%] mx-auto !px-4"}>
+      <MainWrapper CustomClass={ " !w-[100%] sm:!w-[90%] mx-auto !px-4"}>
         <Imagesection
           CustomClass="sm:!gap-x-2"
           ImageClass=" md:!w-[85%] object-cover  "
@@ -51,7 +52,7 @@ const Home = () => {
             solutions, and healthcare mobile apps and websites, enhancing your
             digital presence and helping you achieve your strategic goals in a
             rapidly evolving digital landscape."
-            CustomStyletext ={""}
+            CustomStyletext ={" !text-center"}
         />
       </MainWrapper>
 

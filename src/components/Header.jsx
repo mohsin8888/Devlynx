@@ -14,43 +14,67 @@ export const Header = () => {
 
   return (
     <div className="w-full">
-      <div className="flex items-center justify-between w-[85%] mx-auto ">
-        <Logo />
+      {/* Header Container */}
+      <div className="flex flex-col w-[95%] sm:w-[85%] mx-auto">
+        {/* First Row: Logo and Menu Button */}
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <Logo />
 
-        <nav className="hidden xl:flex justify-center items-center md:gap-16">
-          <ul className="flex lg:gap-x-12">
-            {Navbaritems.map((item, index) => (
-              <li key={index} className="">
-                <Link
-                  to={item.path}
-                  className={`${
-                    pathname === item.path ? "text-[#2B76C1]" : "text-black"
-                  } hover:text-[#2B76C1]`}
-                >
-                  <span className="poppins font-[600] text-sm whitespace-nowrap ">
-                    {item.lable}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className="flex items-center gap-3">
-          <button className="  xl:hidden px-3 py-2 bg-[#2B76C1] text-white rounded-lg hover:bg-blue-600 focus:outline-none">
+        
+
+          {/* Nav for large screens */}
+          <nav className="hidden lg:flex justify-center items-center md:gap-16">
+            <ul className="flex lg:gap-x-12">
+              {Navbaritems.map((item, index) => (
+                <li key={index} className="">
+                  <Link
+                    to={item.path}
+                    className={`${
+                      pathname === item.path ? "text-[#2B76C1]" : "text-black"
+                    } hover:text-[#2B76C1]`}
+                  >
+                    <span className="poppins font-[600] text-sm whitespace-nowrap ">
+                      {item.lable}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="flex justify-center items-center gap-x-4">
+                {/* Menu button for small screens */}
+          <button className="lg:hidden px-3 py-2 bg-[#2B76C1] text-white rounded-lg  focus:outline-none">
             <FaBars size={24} onClick={toggleMenu} />
           </button>
-
-          <Link to="https://api.whatsapp.com/send?phone=923166618694">
+          {/* Estimate Projects button for large screens */}
+          <Link to="https://api.whatsapp.com/send?phone=923166618694" className="hidden md:block">
             <Button
               value={"Estimate Projects"}
               customClass={
-                "hidden sm:inline-block bg-[#2B76C1] whitespace-nowrap  border border-transparent  px-4 xl:px-6 py-2 lg:py-2 leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] "
+                "bg-[#2B76C1] whitespace-nowrap border border-transparent px-4 xl:px-6 py-2 lg:py-2 leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1]"
               }
             />
+          </Link>
+          </div>
+        </div>
+
+        {/* Second Row: Estimate Projects button for small screens */}
+        <div className="mt-5 w-full sm:hidden">
+          <Link
+            to="https://api.whatsapp.com/send?phone=923166618694"
+            className="block w-full"
+          >
+            <div className="w-full bg-[#2B76C1] text-center py-2 rounded-md">
+              <span className="text-white font-semibold text-lg">
+                Estimate Projects
+              </span>
+            </div>
           </Link>
         </div>
       </div>
 
+      {/* Mobile Menu Dropdown */}
       <nav
         className={`${
           isMenuOpen ? "block top-[120px]" : "hidden"
@@ -73,7 +97,6 @@ export const Header = () => {
           </Link>
         ))}
       </nav>
-      {/* </div> */}
     </div>
   );
 };

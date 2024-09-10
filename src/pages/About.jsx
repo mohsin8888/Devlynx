@@ -34,7 +34,7 @@ const About = () => {
           />
         </div>
       </MainWrapper>
-      <MainWrapper CustomClass={"!px-4 !py-12"}>
+      <MainWrapper CustomClass={"!px-4 !py-0 !min-h-[0vh]"}>
         <div className=" w-[100%]   sm:w-[85%] flex flex-col justify-center  items-start  lg:flex-row  md:justify-start   lg:space-x-12">
           <div className=" w-[100%] sm:w-[90%]  lg:w-[45%]">
             <h1 className="  text-[1.9rem] mb-4 sm:text-[2.2rem] md:text-[2.25rem] text-center  sm:text-start poppins font-[600]">
@@ -53,9 +53,9 @@ const About = () => {
           </div>
         </div>
       </MainWrapper>
-      <MainWrapper CustomClass={"px-0 !py-0 !min-h-[0vh] "}>
-        <div className="w-[85%] flex  justify-center sm:justify-start items-center">
-          <div className="w-[100%] lg:w-[60%]  flex items-start">
+      <MainWrapper CustomClass={"!px-0 !py-20 !min-h-[0vh] "}>
+        <div className="w-[90%]">
+          <div className="w-[100%] lg:w-[60%] ">
             <div className="flex items-center lg:items-start relative">
               {/* Adjusted Left Quote Icon */}
               <FaQuoteLeft className="text-blue-400 text-[0.7rem] md:text-[1.5rem] absolute left-0 top-0" />
@@ -74,10 +74,10 @@ const About = () => {
         </div>
       </MainWrapper>
       {/* Add ref to this section */}
-      <MainWrapper CustomClass={"px-4"}>
+      <MainWrapper CustomClass={"!px-3 !py-0  !min-h-[0vh]"}>
         <div
           ref={ref}
-          className="flex flex-wrap justify-around items-center py-10 gap-12 sm:gap-20 bg-white"
+          className="flex flex-wrap justify-around items-center py-10 gap-8 sm:gap-20 bg-white"
         >
           <div className="text-center">
             <p className="text-[2rem] poppins font-[400] leading-[70px] text-[#2B76C1]">
@@ -110,7 +110,7 @@ const About = () => {
       </MainWrapper>
 
       <MainWrapper CustomClass={"!px-0"}>
-        <div className=" w-[80%] lg:w-[90%] mx-auto flex flex-col   lg:flex-row  justify-center items-center gap-x-12  space-y-4 lg:space-y-0">
+        <div className=" w-[90%] lg:w-[90%] mx-auto flex flex-col   lg:flex-row  justify-center items-center gap-x-12  space-y-4 lg:space-y-0">
           {/* <!-- Image Section --> */}
           <div className="w-full lg:w-[50%] flex justify-center items-center">
             <img

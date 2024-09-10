@@ -7,23 +7,22 @@ import { Bannersection } from "../components/About/Bannersection";
 const Service = () => {
   return (
     <>
-      <MainWrapper  CustomClass={"!px-0 sm:!px-16"}>
+      <MainWrapper CustomClass={"!px-0 sm:!px-16"}>
         <div className="max-w-full mx-auto text-center sm:mb-12">
-            
           <h2 className="text-[2.3rem] poppins font-[600]   text-[#000]">
             Digital acceleration services for
           </h2>
           <p className=" text-[2rem] sm:text-[2.3rem] poppins font-[600]  text-[#2B76C1] mb-6 sm:mb-12">
             business growth
           </p>
-          
+
           <span className=" px-2 sm:px-0 text-base sm:text-lg poppins font-[400] text-[#000] ">
             Design. Development. Consulting.
             <br />5 years and counting.
           </span>
         </div>
       </MainWrapper>
-      <div className="   w-[90%] mx-auto  mb-8 sm:mb-20 flex flex-col  lg:flex-row justify-center md:justify-start  space-y-2 lg:space-y-0 lg:space-x-12">
+      <div className="w-[90%] mx-auto  mb-8 sm:mb-20 flex flex-col    lg:flex-row justify-center md:justify-start  space-y-2 lg:space-y-0 lg:space-x-12">
         <div className="  w-[90%] sm:w-[80%] mx-auto lg:w-[40%]">
           <h1 className="text-[2rem] md:text-[2.2rem] poppins font-[600]">
             One-stop shop for
@@ -65,7 +64,7 @@ const Service = () => {
           evaluation. Learn how to accelerate the first steps of the innovation
           process. "
             CustomClass={"mb-16"}
-            CustomClasstext ={"!max-w-xl"}
+            CustomClasstext={"!max-w-xl"}
           />
 
           <div className="w-[90%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 sm:gap-4">
@@ -75,7 +74,7 @@ const Service = () => {
                 image={item.image}
                 text={item.text}
                 para={item.para}
-                CustomClasstext ={"!max-w-2xl"}
+                CustomClasstext={"!max-w-2xl"}
               />
             ))}
           </div>
@@ -88,7 +87,7 @@ const Service = () => {
             subheading="Deliver beautiful and usable products that solve user problems
                and move the needle."
             CustomClass={"mb-16"}
-            CustomClasstext = {"!max-w-[450px]"}
+            CustomClasstext={"!max-w-[450px]"}
           />
 
           <div className="w-[90%] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-12 sm:gap-4">
@@ -98,7 +97,6 @@ const Service = () => {
                 image={item.image}
                 text={item.text}
                 para={item.para}
-               
               />
             ))}
           </div>
@@ -111,7 +109,7 @@ const Service = () => {
             subheading="Leverage reliable processes and speed up delivery across technology stacks.
               How can we help you?"
             CustomClass={"mb-16"}
-            CustomClasstext = {"!max-w-xl"}
+            CustomClasstext={"!max-w-xl"}
           />
 
           <div className="w-[90%] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-12 sm:gap-4">
@@ -121,7 +119,6 @@ const Service = () => {
                 image={item.image}
                 text={item.text}
                 para={item.para}
-               
               />
             ))}
           </div>
@@ -131,11 +128,9 @@ const Service = () => {
         <div class="w-full  bg-gray-100 py-16">
           <Servicesheading
             heading="Mobile Development Services"
-
             subheading="Get professional support from the mobile team at every stage of development"
-
             CustomClass={"mb-16"}
-            CustomClasstext = {"!max-w-[400px]"}
+            CustomClasstext={"!max-w-[400px]"}
           />
 
           <div className="w-[90%] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 sm:gap-4">
@@ -145,7 +140,6 @@ const Service = () => {
                 image={item.image}
                 text={item.text}
                 para={item.para}
-               
               />
             ))}
           </div>
@@ -155,13 +149,9 @@ const Service = () => {
         <div class="w-full  bg-white py-16">
           <Servicesheading
             heading="Low-code Development Services"
-
-
             subheading="Create reliable and scalable solutions faster than ever. Discover why we like minimalism"
-
-
             CustomClass={"mb-16"}
-            CustomClasstext = {"!max-w-[400px]"}
+            CustomClasstext={"!max-w-[400px]"}
           />
 
           <div className=" w-[80%] sm:w-[50%] mx-auto grid grid-cols-2  md:grid-cols-3  gap-12 sm:gap-8">
@@ -171,7 +161,6 @@ const Service = () => {
                 image={item.image}
                 text={item.text}
                 para={item.para}
-               
               />
             ))}
           </div>
@@ -181,10 +170,9 @@ const Service = () => {
         <div class="w-full  bg-gray-100 py-16 ">
           <Servicesheading
             heading="Support and management Services"
-
             subheading="Future-proof your products and services and keep your finger on the pulse. Learn what we can do for business. "
             CustomClass={"mb-16"}
-            CustomClasstext ={"!max-w-xl"}
+            CustomClasstext={"!max-w-xl"}
           />
 
           <div className="w-[90%] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 sm:gap-4">
@@ -194,7 +182,7 @@ const Service = () => {
                 image={item.image}
                 text={item.text}
                 para={item.para}
-                CustomClasstext ={"!max-w-2xl"}
+                CustomClasstext={"!max-w-2xl"}
               />
             ))}
           </div>
@@ -205,8 +193,8 @@ const Service = () => {
         text={
           " Own the change in the market with AI-assisted productivity, rapid prototyping, low-code development, and next-gen design."
         }
-        imagetextstyle = {"max-w-xl"}
-        headingstyle ={"max-w-[59%]  !mx-auto !text-center"}
+        imagetextstyle={"max-w-xl"}
+        headingstyle={"max-w-[59%]  !mx-auto !text-center"}
       />
     </>
   );

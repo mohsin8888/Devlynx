@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import MainWrapper from "../components/Wrapper/MainWrapper";
 import Button from "../components/Buttons/Button";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
@@ -26,12 +27,18 @@ const About = () => {
             We design and develop web and mobile applications for our clients
             worldwide, focusing on outstanding user experience.
           </p>
-          <Button
-            value={"Lets’s work together!"}
-            customClass={
-              "poppins font-[700] text-sm bg-[#2B76C1] whitespace-nowrap !w-52 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] transition-all duration-300"
-            }
-          />
+          <Link
+  to="https://api.whatsapp.com/send?phone=923166618694"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button
+    value={"Let’s work together!"}
+    customClass={
+      "poppins font-[700] text-sm bg-[#2B76C1] whitespace-nowrap !w-52 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] transition-all duration-300"
+    }
+  />
+</Link>
         </div>
       </MainWrapper>
       <MainWrapper CustomClass={"!px-4 !py-0 !min-h-[0vh]"}>
@@ -81,28 +88,28 @@ const About = () => {
         >
           <div className="text-center">
             <p className="text-[2rem] poppins font-[400] leading-[70px] text-[#2B76C1]">
-              {inView && <CountUp start={0} end={5} duration={5.75} />}+
+              {inView && <CountUp start={0} end={5} duration={5.75} />}<span>+</span>
             </p>
             <p className="text-gray-600">Years on the market</p>
           </div>
           <div className="border-l border-l-blue-400 h-24 hidden lg:block"></div>
           <div className="text-center">
             <p className="text-[2rem] poppins font-[600] leading-[70px] text-[#2B76C1]">
-              {inView && <CountUp start={0} end={100} duration={2.75} />}+
+              {inView && <CountUp start={0} end={100} duration={2.75} />}<span>+</span>
             </p>
             <p className="text-gray-600">People on board</p>
           </div>
           <div className="border-l border-l-blue-400 h-16 hidden lg:block"></div>
           <div className="text-center">
             <p className="text-[2rem] poppins font-[600] leading-[70px] text-[#2B76C1]">
-              {inView && <CountUp start={0} end={200} duration={2.75} />}+
+              {inView && <CountUp start={0} end={200} duration={2.75} />}<span>+</span>
             </p>
             <p className="text-gray-600">Projects delivered</p>
           </div>
           <div className="border-l border-l-blue-400 h-16 hidden lg:block"></div>
           <div className="text-center">
             <p className="text-[2rem] poppins font-[600] leading-[70px] text-[#2B76C1]">
-              {inView && <CountUp start={0} end={50} duration={3.75} />}+
+              {inView && <CountUp start={0} end={50} duration={3.75} />}<span>+</span>
             </p>
             <p className="text-gray-600">Current NPS score</p>
           </div>

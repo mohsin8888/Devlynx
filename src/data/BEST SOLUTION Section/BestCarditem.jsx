@@ -6,12 +6,15 @@ export const BestCarditem = [
   {
     icon:Emailicon,
     Cardheadibg: "EMAIL US",
+    link:"mailto:connect@devlynxtech.com",
     Cardpara:
       "connect@devlynxtech.com",
+      
   },
   {
     icon:Whatsappicon,
     Cardheadibg: "WhatsApp us",
+    link:"https://api.whatsapp.com/send?phone=923166618694",
     Cardpara:
       "+92 316 6618694",
   },

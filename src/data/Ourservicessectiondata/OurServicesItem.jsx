@@ -11,7 +11,7 @@ import Photoshopicon from "../../asset/images/home/photoshopicon.svg";
 import Figmaicon from "../../asset/images/home/figma-icon.svg";
 import AdobeXDicon from "../../asset/images/home/adobe-xdicon.svg";
 import Illustratoricon from "../../asset/images/home/Illustratoricon.svg"; 
-import Kotlinicon from "../../asset/images/home/reactjs-icon.svg"; 
+import Kotlinicon from "../../asset/images/home/kotlin-icon.svg"; 
 import  Vueicon from "../../asset/images/home/vuejs-icon.svg";
  export const OurServicesItem  = {
   web: [

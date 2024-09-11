@@ -72,6 +72,7 @@ const Home = () => {
           {BestCarditem.map((item, index) => (
             <Solutioncard
               icon={item.icon}
+              link ={ item.link}
               Cardheadibg={item.Cardheadibg}
               para={item.Cardpara}
               CustomClass=""

@@ -60,24 +60,25 @@ export const Header = () => {
         </div>
 
         {/* Second Row: Estimate Projects button for small screens */}
-        <div className="mt-5 w-full sm:hidden">
+        {/* <div className="mt-5 w-full sm:hidden">
           <Link
             to="https://api.whatsapp.com/send?phone=923166618694"
             className="block w-full"
           >
-            <div className="w-full bg-[#2B76C1] text-center py-2 rounded-md">
-              <span className="text-white font-semibold text-lg">
-                Estimate Projects
-              </span>
-            </div>
+            <Button
+            value={"Estimate Projects"}
+            customClass={
+              "rounded-md border border-transparent  w-full hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] transition-all duration-300"
+            }
+          />
           </Link>
-        </div>
+        </div> */}
       </div>
 
       {/* Mobile Menu Dropdown */}
       <nav
         className={`${
-          isMenuOpen ? "block top-[120px]" : "hidden"
+          isMenuOpen ? "block top-[140px]" : "hidden"
         } xl:hidden justify-center items-center absolute w-[100%] bg-white sm:w-[90%] sm:left-[5%] sm:right-[5%] shadow-xl z-[9999] transition-all duration-300`}
       >
         {Navbaritems.map((item, index) => (
@@ -95,7 +96,21 @@ export const Header = () => {
               {item.lable}
             </span>
           </Link>
+          
         ))}
+         <div className=" py-4 px-2 w-full sm:hidden">
+          <Link
+            to="https://api.whatsapp.com/send?phone=923166618694"
+            className="block w-full"
+          >
+            <Button
+            value={"Estimate Projects"}
+            customClass={
+              "rounded-md border border-transparent  w-full hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] transition-all duration-300"
+            }
+          />
+          </Link>
+        </div>
       </nav>
     </div>
   );

@@ -18,7 +18,7 @@ export const Jobcard = ({
           <Button
             value={"Apply Now"}
             customClass={
-              "rounded-md border border-transparent  w-40 hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] transition-all duration-300"
+              "rounded-md border border-transparent  !w-40 hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] transition-all duration-300"
             }
           />
         </Link>

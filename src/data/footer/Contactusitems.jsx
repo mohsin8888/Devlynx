@@ -7,7 +7,7 @@ export const Contactusitems = [
     heading:"Reach Us",
      phoneimage: phoneimage,
      phoneimagetext : "+92 316 6618694",
-     phonelink :"tel:0092 316 6618694",
+     phonelink :"https://api.whatsapp.com/send?phone=923166618694",
      envlopimagetext:"connect@devlynxtech.com",
      envlopimage :envlopimage,
      envloplink :"mailto:connect@devlynxtech.com",

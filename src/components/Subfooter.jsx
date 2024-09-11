@@ -1,26 +1,22 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 export const Subfooter = () => {
   return (
-   <>
-   <div class="bg-gray-100 py-8">
-  <div class=" w-[85%] mx-auto flex flex-col md:flex-row items-center justify-between">
-    <p className="text-sm inter font-[400] text-[#000000]">
-      © 2024 Devlynx. All rights reserved.
+    <>
+      <div className="bg-gray-100 py-8">
+  <div className="w-[85%] mx-auto flex items-center justify-between">
+    <p className=" flex items-center gap-3 text-sm inter font-[400] text-[#000000]">
+      © 2024 Devlynx. All rights reserved. 
+      <Link to="#" className="hover:underline text-sm inter font-[400] text-[#000000] ml-2">
+        Privacy Policy
+      </Link>
     </p>
-    <div className="flex  flex-wrap  justify-center items-center gap-y-2 space-x-4 mt-2 md:mt-0">
-    <Link to="#" className=" whitespace-nowrap hover:underline text-sm inter font-[400] text-[#000000]">Privacy Policy</Link>
-    <Link to="#" className=" whitespace-nowrap hover:underline text-sm inter font-[400] text-[#000000]">Terms of Use</Link>
-    <Link to="#" className=" whitespace-nowrap hover:underline text-sm inter font-[400] text-[#000000]">Sales and Refunds</Link>
-    <Link to="#" className=" whitespace-nowrap hover:underline text-sm inter font-[400] text-[#000000]">Legal</Link>
-    <Link to="#" className=" whitespace-nowrap hover:underline text-sm inter font-[400] text-[#000000]">Site Map</Link>
-</div>
-    <div class=" whitespace-nowrap mt-2 md:mt-0 text-sm inter font-[400] text-[#000000]">
-      United States
+
+    <div className="whitespace-nowrap mt-2 md:mt-0 text-sm inter font-[400] text-[#000000]">
+      Pakistan
     </div>
   </div>
 </div>
-
-   </>
-  )
-}
+    </>
+  );
+};

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Aboutimg2 from "../../asset/images/about/aboutimage2.svg";
 import Button from '../Buttons/Button';
 export const Bannersection = ({ heading,text,headingstyle,imagetextstyle,Customclass}) => {
@@ -22,12 +23,14 @@ export const Bannersection = ({ heading,text,headingstyle,imagetextstyle,Customc
       <p className={`text-base md:text-[1rem] poppins font-[600] mb-8 ${imagetextstyle}`}>
         {text}
       </p>
-      <Button
-        value={"Work with us"}
-        customClass={
-          " mt-8 poppins font-[600] text-sm bg-[#2B76C1] whitespace-nowrap  !w-52 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400]  transition-all duration-300"
-        }
-      />
+      <Link to="https://api.whatsapp.com/send?phone=923166618694" target="_blank" rel="noopener noreferrer">
+  <Button
+    value={"Work with us"}
+    customClass={
+      " mt-8 poppins font-[600] text-sm bg-[#2B76C1] whitespace-nowrap  !w-52 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400]  transition-all duration-300"
+    }
+  />
+</Link>
     </div>
   </div>
   )

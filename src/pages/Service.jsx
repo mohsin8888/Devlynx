@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MainWrapper from "../components/Wrapper/MainWrapper";
 import Servicesheading from "../components/Services/Servicesheading";
 import { Ideationservicescard } from "../components/Services/Ideationservicescard";
 import { ServicespageItem } from "../data/Servicespage data/ServicespageItem";
 import { Bannersection } from "../components/About/Bannersection";
+import { useLocation } from "react-router-dom";
 const Service = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <MainWrapper CustomClass={"!px-0 sm:!px-16"}>
@@ -80,7 +92,8 @@ const Service = () => {
           </div>
         </div>
       </MainWrapper>
-      <MainWrapper CustomClass={" !py-0 !px-0"}>
+      <MainWrapper CustomClass={" !py-0 !px-0"}
+      id={'graphicssolution'}>
         <div class="w-full  bg-gray-100 py-16">
           <Servicesheading
             heading="Product design Services"
@@ -102,7 +115,9 @@ const Service = () => {
           </div>
         </div>
       </MainWrapper>
-      <MainWrapper CustomClass={" !py-0 !px-0"}>
+      <MainWrapper 
+      id={'webdeveloment'}
+      CustomClass={" !py-0 !px-0"}>
         <div class="w-full  bg-gray-100 py-16">
           <Servicesheading
             heading="Web Development Services"
@@ -123,8 +138,9 @@ const Service = () => {
             ))}
           </div>
         </div>
-      </MainWrapper>
-      <MainWrapper CustomClass={" !py-0 !px-0"}>
+      </MainWrapper >
+      <MainWrapper CustomClass={" !py-0 !px-0"}
+      id={'appdeveloment'}>
         <div class="w-full  bg-gray-100 py-16">
           <Servicesheading
             heading="Mobile Development Services"
@@ -166,7 +182,8 @@ const Service = () => {
           </div>
         </div>
       </MainWrapper>
-      <MainWrapper CustomClass={" !py-0 !px-0"}>
+      <MainWrapper CustomClass={" !py-0 !px-0"}
+      id={'supportmangement'}>
         <div class="w-full  bg-gray-100 py-16 ">
           <Servicesheading
             heading="Support and management Services"

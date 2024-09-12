@@ -12,7 +12,10 @@ const Service = () => {
     if (location.hash) {
       const element = document.getElementById(location.hash.substring(1));
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        // Add a short delay to ensure the page has loaded
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 300); // You can adjust the timeout if needed
       }
     }
   }, [location]);

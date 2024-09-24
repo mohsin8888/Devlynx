@@ -41,7 +41,7 @@ const About = () => {
 </Link>
         </div>
       </MainWrapper>
-      <MainWrapper CustomClass={"!px-4 !py-0 !min-h-[0vh]"}>
+      <MainWrapper CustomClass={"!px-4 !py-0 sm:!min-h-[50vh]"}>
         <div className=" w-[100%]   sm:w-[85%] flex flex-col justify-center  items-start  lg:flex-row  md:justify-start   lg:space-x-12">
           <div className=" w-[100%] sm:w-[90%]  lg:w-[45%]">
             <h1 className="  text-[1.9rem] mb-4 sm:text-[2.2rem] md:text-[2.25rem] text-center  sm:text-start poppins font-[600]">
@@ -60,7 +60,7 @@ const About = () => {
           </div>
         </div>
       </MainWrapper>
-      <MainWrapper CustomClass={"!px-0 !py-20 !min-h-[0vh] "}>
+      <MainWrapper CustomClass={"!px-0 !py-20 sm:!min-h-[0vh] "}>
         <div className="w-[90%]">
           <div className="w-[100%] lg:w-[60%] ">
             <div className="flex items-center lg:items-start relative">

@@ -37,40 +37,40 @@ const Service = () => {
           </span>
         </div>
       </MainWrapper>
-      <div className="w-[90%] mx-auto  mb-8 sm:mb-20 flex flex-col    lg:flex-row justify-center md:justify-start  space-y-2 lg:space-y-0 lg:space-x-12">
-        <div className="  w-[90%] sm:w-[80%] mx-auto lg:w-[40%]">
-          <h1 className="text-[2rem] md:text-[2.2rem] poppins font-[600]">
-            One-stop shop for
-            <span className="text-[#2B76C1]"> digital </span>
-          </h1>
-        </div>
-        <div className=" w-[90%] sm:w-[80%] mx-auto lg:w-[45%] ">
-          <p className="text-[#626262] poppins font-[400]  text-base">
-            We help deliver digital excellence at every stage of the product
-            journey, from early ideation to research, prototyping, testing,
-            launch, and ongoing support. Explore our end-to-end services
-            designed to improve business metrics and deliver delightful digital
-            experiences.
-          </p>
-        </div>
-      </div>
-      <div className="   w-[90%] mx-auto  mb-8 sm:mb-20 flex flex-col  lg:flex-row justify-center md:justify-start  space-y-4 lg:space-y-0 lg:space-x-12">
-        <div className="  w-[80%] mx-auto lg:w-[45%]">
-          <h1 className="text-[2rem] md:text-[2.2rem]  poppins font-[600]">
-            Ideation and
-            <span className="text-[#2B76C1]"> evaluation </span>
-          </h1>
-        </div>
-        <div className=" w-[80%] mx-auto lg:w-[45%] ">
-          <p className="text-[#626262] poppins font-[400]  text-base">
-            We help deliver digital excellence at every stage of the product
-            journey, from early ideation to research, prototyping, testing,
-            launch, and ongoing support. Explore our end-to-end services
-            designed to improve business metrics and deliver delightful digital
-            experiences.
-          </p>
-        </div>
-      </div>
+      <div className="w-[90%] px-4 mx-auto mb-8 sm:mb-20 flex flex-col lg:flex-row justify-center md:justify-start space-y-4 lg:space-y-0 lg:space-x-12">
+  <div className="w-[90%] sm:w-[80%] lg:w-[45%] mx-auto">
+    <h1 className="text-[2rem] md:text-[2.2rem] poppins font-[600]">
+      One-stop shop for
+      <span className="text-[#2B76C1]"> digital </span>
+    </h1>
+  </div>
+  <div className="w-[90%] sm:w-[80%] lg:w-[45%] mx-auto">
+    <p className="text-[#626262] poppins font-[400] text-base">
+      We help deliver digital excellence at every stage of the product
+      journey, from early ideation to research, prototyping, testing,
+      launch, and ongoing support. Explore our end-to-end services
+      designed to improve business metrics and deliver delightful digital
+      experiences.
+    </p>
+  </div>
+</div>
+<div className="w-[90%] px-4 mx-auto mb-8 sm:mb-20 flex flex-col lg:flex-row justify-center md:justify-start space-y-4 lg:space-y-0 lg:space-x-12">
+  <div className="w-[80%] lg:w-[45%] mx-auto">
+    <h1 className="text-[2rem] md:text-[2.2rem] poppins font-[600]">
+      Ideation and
+      <span className="text-[#2B76C1]"> evaluation </span>
+    </h1>
+  </div>
+  <div className="w-[80%] lg:w-[45%] mx-auto">
+    <p className="text-[#626262] poppins font-[400] text-base">
+      We help deliver digital excellence at every stage of the product
+      journey, from early ideation to research, prototyping, testing,
+      launch, and ongoing support. Explore our end-to-end services
+      designed to improve business metrics and deliver delightful digital
+      experiences.
+    </p>
+  </div>
+</div>
       <MainWrapper CustomClass={" !py-0 !px-0"}>
         <div class="w-full  bg-gray-100 py-16">
           <Servicesheading

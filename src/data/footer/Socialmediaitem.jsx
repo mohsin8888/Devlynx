@@ -6,6 +6,7 @@ import whatsappfooter from "../../asset/images/footer/whatsapp-footer.svg"
 export const Socialmediaitem = [
   {
     heading: "Devlynx",
+    id:"home",
     subheading:
       "We are a leading full-service digital and web development company in Pakistan. We have every solution under one roof to grow your business. ",
      "linkdin" :linkdin,

@@ -28,8 +28,8 @@ const Careers = () => {
 
       <div className="w-full flex flex-col ">
   <div className="text-blue-700 mb-3 font-bold w-[90%] mx-auto pl-8">
-    <h2 className="text-[2rem]">Development</h2>
-    <div className="bg-blue-700 h-[1vh] w-[5%] rounded-xl"></div>
+    <h2 className="text-[2rem] text-[#2B76C1]">Development</h2>
+    <div className="bg-[#2B76C1] h-[1vh] w-[5%] rounded-xl"></div>
   </div>
   <Jobcard
     Cardheading={"WordPress Developer"}
@@ -48,8 +48,8 @@ const Careers = () => {
   />
 </div>
    <div className="text-blue-700 font-bold  w-[90%] mx-auto pl-2 ">
-    <h2 className="text-[2rem]">Designing</h2>
-    <div className="bg-blue-700 h-[1vh] w-[5%] rounded-xl"></div>
+    <h2 className="text-[2rem] text-[#2B76C1]">Designing</h2>
+    <div className="bg-[#2B76C1] h-[1vh] w-[5%] rounded-xl"></div>
   </div>
 <div className="w-full flex flex-col mt-7 py-8  shadow-2xl">
   <Jobcard

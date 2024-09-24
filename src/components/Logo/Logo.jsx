@@ -7,6 +7,7 @@ const Logo = ({
     customClass,
     ImageClass,
     src,
+    
 }) => {
   return (
     <>

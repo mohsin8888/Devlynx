@@ -8,7 +8,7 @@ export const Subfooter = () => {
     <p className=" flex items-center gap-3 text-sm inter font-[400] text-[#000000]">
       © 2024 Devlynx. All rights reserved. 
       <Link to="#" className="hover:underline text-sm inter font-[400] text-[#000000] ml-2">
-        Privacy Policy
+        
       </Link>
     </p>
 

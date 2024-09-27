@@ -9,8 +9,8 @@ const Headinghome = ({
 }) => {
   return (
     <>
-      <section class={` w-full flex flex-col md:flex-row items-start md:items-center  text-center sm:text-start  ${CustomClass}`}>
-        <div class="  w-full sm:w-[50%]  md:mb-0">
+      <section class={` flex flex-col lg:flex-row items-start lg:items-center  text-center sm:text-start  ${CustomClass}`}>
+        <div class="  w-full md:w-[90%] lg:w-[50%]  mb-4">
           <div class="flex items-center space-x-2">
             <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
             <span class="text-base text-[#242E49] lato font-[600]">
@@ -23,8 +23,8 @@ const Headinghome = ({
           </h1>
         </div>
 
-        <div class="w-full sm:w-[50%] ">
-          <p class="text-lg text-[#908E9A] w-[100%]  poppins font-[400] ">
+        <div class="w-full sm:w-[80%] md:w-[100%] lg:w-[50%] ">
+          <p class="text-lg text-[#908E9A]   poppins font-[400] ">
            {text}
           </p>
         </div>

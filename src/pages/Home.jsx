@@ -18,14 +18,14 @@ const Home = () => {
   const { setIsMenuOpen } = useOutletContext(); // Use this to get setIsMenuOpen
   return (
     <div onClick={() => setIsMenuOpen(false)}>
-      <MainWrapper CustomClass={"!px-2"}>
-        <div className="max-[95%] mx-auto text-center">
+      <MainWrapper CustomClass={"!px-2  py-8 sm:!py-16"}>
+        <div className=" w-full lg:w-[90%] mx-auto text-center">
           <h2 className="text-[2rem] lato font-[800] leading-[40px] mb-2 sm:mb-4 text-[#000]">
             We  Do
             <span className="text-[#2b76c1] lato font-[800]">  Development   </span>
           </h2>
 
-          <p className="sm:w-[60%] mx-auto  mb-4 sm:mb-8 text-lg poppins font-[400] text-[#8C8E94;]">
+          <p className=" sm:w-[70%] lg:w-[60%] mx-auto  mb-4 sm:mb-8 text-lg poppins font-[400] text-[#8C8E94;]">
             At Devlynx we develop smart and intelligent solution for your
             business. our solutions solve business problems and improve
             productivity
@@ -45,14 +45,15 @@ const Home = () => {
         </div>
       </MainWrapper>
 
-      <MainWrapper CustomClass={" !px-4 md:!px-40  "}>
+      <MainWrapper CustomClass={" !px-4 sm:!px-20  md:!px-28 lg:!px-40"}>
         <Headinghome
           Heading="Our Commitment"
           subheading="What we serve"
           text="At Devlynx we develop efficient and responsive business models through proactive and multi-dimensional solutions."
         />
-
-        <div className="flex flex-wrap  mt-4 sm:pt-20 w-[100%] mx-auto  justify-center">
+         </MainWrapper>
+         <MainWrapper CustomClass={" !px-4 lg:!px-28 !py-0 sm:!py-16"}>
+        <div className="flex flex-wrap  mt-4 sm:pt-20 w-[100%] mx-auto py-8 sm:py-0 justify-center">
           {Carditems.services.map((item, index) => (
             <Servicescard
               key={index}
@@ -73,7 +74,7 @@ const Home = () => {
           CustomStyletext=""
         />
       </MainWrapper>
-      <MainWrapper CustomClass={"sm:!px-40 !py-0 !min-h-[0vh]"}>
+      <MainWrapper CustomClass={" !px-2 sm:!px-40 !py-0"}>
         <Headinghome
           Heading="Our Project"
           subheading="What We Made"
@@ -102,7 +103,7 @@ const Home = () => {
           CustomStyletext=""
         />
       </MainWrapper>
-      <MainWrapper CustomClass={"sm:!px-48 !py-0 !min-h-[0vh]"}>
+      <MainWrapper CustomClass={" !px-5 sm:!px-48 !py-0 !min-h-[0vh]"}>
         <Headinghome
           Heading="Contact details"
           subheading="How to Approach"

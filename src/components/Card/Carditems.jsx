@@ -1,30 +1,47 @@
-import Webicon from "../../asset/images/home/webicon.svg";
-import Appicon from "../../asset/images/home/appicon.svg";
-import Uiuxicon from "../../asset/images/home/uiuxicon.svg";
-import Supporticon from "../../asset/images/home/supporticon.svg";
-export const Carditems = [
-  {
-    icon: Webicon,
-    Cardheadibg: "Web Development",
-    Cardpara:
-      "We develop customized, dynamic websites, management systems, and e-commerce platforms with advanced, interactive interfaces to automate workflows and enhance your business operations.",
-  },
-  {
-    icon: Appicon,
-    Cardheadibg: " App Development",
-    Cardpara:
-      "We create customized, dynamic mobile apps, management systems, and service platforms with advanced, interactive interfaces to automate  workflows and enhance your business operations.",
-  },
-  {
-    icon: Uiuxicon,
-    Cardheadibg: "UI/UX",
-    Cardpara:
-      "We design intuitive, user-centric interfaces and seamless user experiences that enhance engagement and streamline interactions for  your business applications and platforms.",
-  },
-  {
-    icon: Supporticon,
-    Cardheadibg: "Support & Maintenance",
-    Cardpara:
-      "We provide comprehensive support and maintenance services to minimize downtime, optimize performance, and keep your business operations efficient and reliable.",
-  },
-];
+import Webiimage from "../../asset/images/home/webimage.svg";
+import Appimage from "../../asset/images/home/appimage.svg";
+import uximage from "../../asset/images/home/uximage.svg";
+import projectImage1 from "../../asset/images/home/p.png";
+
+export const Carditems = {
+  services: [
+    {
+      image: Webiimage,
+      heading: "Web Development",
+      description:
+        "We offer professional web development services to create custom, responsive, and dynamic websites tailored to your business needs.",
+    },
+    {
+      image: Appimage,
+      heading: "App Development",
+      description:
+        "We deliver custom app development services, crafting innovative and user-friendly mobile applications for your business.",
+    },
+    {
+      image: uximage,
+      heading: "UI/UX",
+      description:
+        "We offer UI/UX design services, creating intuitive and engaging user interfaces that enhance the overall user experience.",
+    },
+  ],
+  projects: [
+    {
+      image: projectImage1,
+      heading: "Skin Sort",
+      description:
+        "DevLynx developed the Skin Sort app, designed to help users find and purchase the best skincare products tailored to their needs. Our app enhances the skincare shopping experience with personalized recommendations and easy navigation.",
+    },
+    {
+      image: projectImage1,
+      heading: "Skin Sort",
+      description:
+        "DevLynx developed the Skin Sort app, designed to help users find and purchase the best skincare products tailored to their needs. Our app enhances the skincare shopping experience with personalized recommendations and easy navigation.",
+    },
+    {
+      image: projectImage1,
+      heading: "Skin Sort",
+      description:
+        "DevLynx developed the Skin Sort app, designed to help users find and purchase the best skincare products tailored to their needs. Our app enhances the skincare shopping experience with personalized recommendations and easy navigation.",
+    },
+  ],
+};

@@ -9,7 +9,8 @@ export const Imagesection = ({
     CustomStyletext
 }) => {
   return (
-    <div className={`flex flex-col lg:flex-row items-center   ${CustomClass}`}>
+    <div className='bg-[#274874] flex items-center justify-center p-4 '>
+    <div className={`flex flex-col lg:flex-row items-center  gap-12  ${CustomClass}`}>
   {/* <!-- Image Section --> */}
   <div className=" mb-8 md:mb-0 w-full lg:w-[45%] flex justify-center items-center">
     <img
@@ -20,14 +21,15 @@ export const Imagesection = ({
   </div>
 
   {/* <!-- Text Section --> */}
-  <div className="lg:w-[45%]">
-    <h2 className=" text-[#2B76C1] text-[2rem] poppins font-[600] mb-4  text-center">
+  <div className="lg:w-[45%] text-start">
+    <h2 className=" text-white text-[2rem] poppins font-[600] mb-4  w-[80%] ">
       {heading}
     </h2>
-    <p className={`text-[#626262] poppins font-[400] text-xl  lg:leading-[40px]  ${CustomStyletext}`}>
+    <p className={` poppins font-[400] text-xl  lg:leading-[30px]  text-white ${CustomStyletext}`}>
       {para}
     </p>
   </div>
+</div>
 </div>
 
   )

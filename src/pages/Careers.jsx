@@ -47,7 +47,7 @@ const Careers = () => {
    
   />
 </div>
-   <div className="text-blue-700 font-bold  w-[90%] mx-auto pl-2 ">
+   <div className="text-blue-700 font-bold  w-[90%] mx-auto pl-7 ">
     <h2 className="text-[2rem] text-[#2B76C1]">Designing</h2>
     <div className="bg-[#2B76C1] h-[1vh] w-[5%] rounded-xl"></div>
   </div>

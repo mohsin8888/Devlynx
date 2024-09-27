@@ -52,10 +52,10 @@ export const Footer = () => {
         <div key={index} className="space-y-4 md:ml-8">
           <h2 className="text-[24px] inter font-[600] text-[#000]">{item.heading}</h2>
           <ul className="  space-y-1">
-            <li><a href="/services#webdeveloment" className=" hover:underline text-base inter font-[400] text-[#000000]">{item.Weblink}</a></li>
-            <li><a href ="/services#appdeveloment" className=" hover:underline text-base inter font-[400] text-[#000000]">{item.Applink}</a></li>
-            <li><a href="/services#graphicssolution" className=" hover:underline text-base inter font-[400] text-[#000000]">{item.Graphicslink}</a></li>
-            <li><a href="/services#supportmangement" className=" hover:underline text-base inter font-[400] text-[#000000]">{item.Supportlink}</a></li>
+            <li><a href="/#/services#webdeveloment" className=" hover:underline text-base inter font-[400] text-[#000000]">{item.Weblink}</a></li>
+            <li><a href ="/#/services#appdeveloment" className=" hover:underline text-base inter font-[400] text-[#000000]">{item.Applink}</a></li>
+            <li><a href="/#/services#graphicssolution" className=" hover:underline text-base inter font-[400] text-[#000000]">{item.Graphicslink}</a></li>
+            <li><a href="/#/services#supportmangement" className=" hover:underline text-base inter font-[400] text-[#000000]">{item.Supportlink}</a></li>
             {/* <li><Link to="#" className=" hover:underline text-base inter font-[400] text-[#000000]">{item.Technicallink}</Link></li> */}
           </ul>
         </div>

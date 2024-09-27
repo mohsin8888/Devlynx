@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import MainWrapper from "../components/Wrapper/MainWrapper";
 import Button from "../components/Buttons/Button";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
@@ -28,17 +28,17 @@ const About = () => {
             worldwide, focusing on outstanding user experience.
           </p>
           <Link
-  to="https://api.whatsapp.com/send?phone=923166618694"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <Button
-    value={"Let’s work together!"}
-    customClass={
-      "poppins font-[700] text-sm bg-[#2B76C1] whitespace-nowrap !w-52 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] transition-all duration-300"
-    }
-  />
-</Link>
+            to="https://api.whatsapp.com/send?phone=923166618694"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              value={"Let’s work together!"}
+              customClass={
+                "poppins font-[700] text-sm bg-[#2B76C1] whitespace-nowrap !w-52 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] transition-all duration-300"
+              }
+            />
+          </Link>
         </div>
       </MainWrapper>
       <MainWrapper CustomClass={"!px-4 !py-0 sm:!min-h-[50vh]"}>
@@ -88,28 +88,32 @@ const About = () => {
         >
           <div className="text-center">
             <p className="text-[2rem] poppins font-[400] leading-[70px] text-[#2B76C1]">
-              {inView && <CountUp start={0} end={5} duration={5.75} />}<span>+</span>
+              {inView && <CountUp start={0} end={5} duration={5.75} />}
+              <span>+</span>
             </p>
             <p className="text-gray-600">Years on the market</p>
           </div>
           <div className="border-l border-l-blue-400 h-24 hidden lg:block"></div>
           <div className="text-center">
             <p className="text-[2rem] poppins font-[600] leading-[70px] text-[#2B76C1]">
-              {inView && <CountUp start={0} end={100} duration={2.75} />}<span>+</span>
+              {inView && <CountUp start={0} end={100} duration={2.75} />}
+              <span>+</span>
             </p>
             <p className="text-gray-600">People on board</p>
           </div>
           <div className="border-l border-l-blue-400 h-16 hidden lg:block"></div>
           <div className="text-center">
             <p className="text-[2rem] poppins font-[600] leading-[70px] text-[#2B76C1]">
-              {inView && <CountUp start={0} end={200} duration={2.75} />}<span>+</span>
+              {inView && <CountUp start={0} end={200} duration={2.75} />}
+              <span>+</span>
             </p>
             <p className="text-gray-600">Projects delivered</p>
           </div>
           <div className="border-l border-l-blue-400 h-16 hidden lg:block"></div>
           <div className="text-center">
             <p className="text-[2rem] poppins font-[600] leading-[70px] text-[#2B76C1]">
-              {inView && <CountUp start={0} end={50} duration={3.75} />}<span>+</span>
+              {inView && <CountUp start={0} end={50} duration={3.75} />}
+              <span>+</span>
             </p>
             <p className="text-gray-600">Current NPS score</p>
           </div>
@@ -132,7 +136,7 @@ const About = () => {
             <h2 className="text-[40px] poppins font-[600] leading-[60px]">
               Visit our office <span className="text-blue-600">in Lahore</span>
             </h2>
-            <p className="mt-2 inter  text-[2rem] lg:text-[2rem] font-[400]  text-[#000]  ">
+            <p className="mt-2 inter  text-[1.7rem] sm::text-[2rem] font-[400]  text-[#000]  ">
               Office 504, 4th floor, Link Arcade,
               <br />
               Model Town Link Road, Lahore

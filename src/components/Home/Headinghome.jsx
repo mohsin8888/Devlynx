@@ -4,6 +4,7 @@ const Headinghome = ({
     CustomClass,
     Heading,
     subheading,
+    subheadingstyle,
     text,
   
 }) => {
@@ -11,14 +12,14 @@ const Headinghome = ({
     <>
       <section class={` flex flex-col lg:flex-row items-start lg:items-center  text-center sm:text-start  ${CustomClass}`}>
         <div class="  w-full md:w-[90%] lg:w-[50%]  mb-4">
-          <div class="flex items-center space-x-2">
-            <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+          <div class="flex items-center space-x-2 pl-6 sm:pl-0 ">
+            <div class="w-2 h-2 bg-[#2b76c1] rounded-full"></div>
             <span class="text-base text-[#242E49] lato font-[600]">
               {Heading}
             </span>
           </div>
 
-          <h1 class="mt-2 text-[2.5rem]  latofont-[800] text-[#242E49]">
+          <h1 class={`mt-2 text-[2rem]  sm:text-[2.5rem]  latofont-[800] text-[#242E49] ${subheadingstyle}`}>
             {subheading}
           </h1>
         </div>

@@ -1,7 +1,7 @@
 import Webiimage from "../../asset/images/home/webimage.svg";
 import Appimage from "../../asset/images/home/appimage.svg";
 import uximage from "../../asset/images/home/uximage.svg";
-import projectImage1 from "../../asset/images/home/p.png";
+import projectImage1 from "../../asset/images/home/newproject.svg";
 
 export const Carditems = {
   services: [

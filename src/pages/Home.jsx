@@ -14,43 +14,42 @@ import { Projectcard } from "../components/Card/Projectcard";
 import Headinghome from "../components/Home/Headinghome";
 import { Link } from "react-router-dom";
 import Button from "../components/Buttons/Button";
-import zzz from "../asset/images/home/backgroundimg.svg";
+import zz from "../asset/images/home/backgroundimg.svg";
+
 const Home = () => {
   const { setIsMenuOpen } = useOutletContext(); // Use this to get setIsMenuOpen
   return (
     <div onClick={() => setIsMenuOpen(false)}>
-     <MainWrapper
-  CustomClass={"!px-2 py-12 sm:!py-20"}
-  style={{
-    backgroundImage: `url(${zzz})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }}
->
-  <div className="w-full lg:w-[90%] mx-auto text-center">
-    <h2 className="text-[2rem] lato font-[800] leading-[40px] mb-2 sm:mb-4 text-[#000]">
-      We Do
-      <span className="text-[#2b76c1] lato font-[800]"> Development </span>
-    </h2>
+      <MainWrapper CustomClass={"!px-2 py-12 sm:!py-20"}>
+        <div className="w-full lg:w-[90%] mx-auto text-center">
+          <h2 className="text-[2rem] lato font-[800] leading-[40px] mb-2 sm:mb-4 text-[#000]">
+            We Do
+            <span className="text-[#2b76c1] lato font-[800]">
+              {" "}
+              Development{" "}
+            </span>
+          </h2>
 
-    <p className="sm:w-[70%] lg:w-[60%] mx-auto mb-6 sm:mb-8 text-lg poppins font-[400] text-[#8C8E94]">
-      At Devlynx we develop smart and intelligent solutions for your business. Our solutions solve business problems and improve productivity.
-    </p>
+          <p className="sm:w-[70%] lg:w-[60%] mx-auto mb-6 sm:mb-8 text-lg poppins font-[400] text-[#8C8E94]">
+            At Devlynx we develop smart and intelligent solution for your
+            business. our solutions solve business problems and improve
+            productivity
+          </p>
 
-    <Link
-      to="https://api.whatsapp.com/send?phone=923166618694"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Button
-        value={"Lets GO"}
-        customClass={
-          "lato font-[600] text-[12px] bg-[#2B76C1] !py-2 whitespace-nowrap !w-28 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] transition-all duration-300"
-        }
-      />
-    </Link>
-  </div>
-</MainWrapper>
+          <Link
+            to="https://api.whatsapp.com/send?phone=923166618694"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              value={"Lets GO"}
+              customClass={
+                "lato font-[600] text-[12px] bg-[#2B76C1] !py-2 whitespace-nowrap !w-28 rounded-md border border-transparent leading-normal hover:bg-white hover:text-[#2B76C1] hover:font-[400] hover:border-[#2B76C1] transition-all duration-300"
+              }
+            />
+          </Link>
+        </div>
+      </MainWrapper>
 
       <MainWrapper CustomClass={" !px-4 sm:!px-20  md:!px-28 lg:!px-40 !py-0"}>
         <Headinghome
@@ -114,7 +113,7 @@ const Home = () => {
         <Headinghome
           Heading="Contact details"
           subheading="How to Approach"
-          subheadingstyle= "!w-[100%]"
+          subheadingstyle="!w-[100%]"
           text="Looking for top-notch web development, app development, or UI/UX design? Contact DevLynx today and let us transform your vision into reality with our expert solutions!"
         />
       </MainWrapper>

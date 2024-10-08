@@ -27,7 +27,7 @@ const Careers = () => {
       </MainWrapper>
 
       <div className="w-full flex flex-col ">
-  <div className="text-blue-700 mb-4 font-bold w-[90%] mx-auto pl-8">
+  <div className="text-blue-700 mb-4 font-bold w-[90%] mx-auto pl-7">
     <h2 className="text-[2rem] text-[#2B76C1]">Development</h2>
     <div className="bg-[#2B76C1] h-[1vh] w-[5%] rounded-xl"></div>
   </div>
